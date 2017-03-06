@@ -1,0 +1,332 @@
+@import 'main.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+html{
+  background: #222;
+  overflow: scroll;
+}
+
+body{
+  background: none;
+  line-height: 1.5;
+  color: #f5f5f5;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Abril Fatface', cursive;
+  margin-top: 0;
+}
+
+p{
+  margin-bottom: 1rem;
+}
+
+
+.navbar-nav>li>a{
+  color: #f5f5f5;
+  background: none;
+  font-weight: bold;
+}
+
+.navbar-nav>li>a:after{
+    content: '/';
+    margin-left: 30px;
+}
+
+.navbar-nav>li:last-child>a:after{
+    content: '';
+}
+
+.navbar-nav>li>a:hover{
+  background: none;
+}
+
+.navbar-toggle{
+  background: #111;
+}
+
+.navbar-toggle .icon-bar{
+  background: #f5f5f5;
+}
+
+@media (max-width:768px) {
+  .navbar-nav>li>a:after{
+    content: '';
+  }
+  .navbar-nav>li>a {
+    background: #111;
+    border-radius: 4px;
+    margin-bottom: 3px;
+  }
+}
+
+.container .jumbotron, .container-fluid .jumbotron{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.jumbotron{
+  background: none;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.jumbotron h1{
+  font-size: 120px;
+}
+
+.jumbotron .lead{
+  font-size: 32px;
+}
+
+@media (max-width:992px) {
+  .jumbotron h1{
+    font-size: 72px;
+  }
+}
+
+@media (max-width:768px) {
+  .jumbotron h1{
+    font-size: 40px;
+  }
+  .jumbotron .lead{
+    font-size: 20px;
+  }
+}
+
+.portfolio-title{
+  padding: 10px 15px 10px 0;
+  font-weight: bold;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+  background: #111;
+  color: #f5f5f5;
+}
+
+.nav-pills a{
+  color: #f5f5f5;
+  margin-bottom: 1rem;
+}
+
+.nav>li>a:focus, .nav>li>a:hover{
+  background: none;
+}
+
+.portfolio-item{
+  margin-bottom: 1rem;
+}
+
+.contact-form{
+  background: #111;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-radius: 3px;
+  margin-bottom: 3rem;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+/*Footer*/
+.full {
+    width: 100%;
+}
+.gap {
+	height: 30px;
+	width: 100%;
+	clear: both;
+	display: block;
+}
+.footer {
+	background: #EDEFF1;
+	height: auto;
+	padding-bottom: 30px;
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+	border-top: 1px solid #DDDDDD;
+}
+.footer p {
+	margin: 0;
+}
+.footer img {
+	max-width: 100%;
+}
+.footer h3 {
+	border-bottom: 1px solid #BAC1C8;
+	color: #54697E;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 27px;
+	padding: 40px 0 10px;
+	text-transform: uppercase;
+}
+.footer ul {
+	font-size: 13px;
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+	margin-top: 15px;
+	color: #7F8C8D;
+}
+.footer ul li a {
+	padding: 0 0 5px 0;
+	display: block;
+}
+.footer a {
+	color: #78828D
+}
+.supportLi h4 {
+	font-size: 20px;
+	font-weight: lighter;
+	line-height: normal;
+	margin-bottom: 0 !important;
+	padding-bottom: 0;
+}
+.newsletter-box input#appendedInputButton {
+	background: #FFFFFF;
+	display: inline-block;
+	float: left;
+	height: 30px;
+	clear: both;
+	width: 100%;
+}
+.newsletter-box .btn {
+	border: medium none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	display: inline-block;
+	height: 40px;
+	padding: 0;
+	width: 100%;
+	color: #fff;
+}
+.newsletter-box {
+	overflow: hidden;
+}
+.bg-gray {
+	background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
+	box-shadow: 0 1px 0 #B4B3B3;
+}
+.social li {
+	background: none repeat scroll 0 0 #B5B5B5;
+	border: 2px solid #B5B5B5;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	margin: 0 8px 0 0;
+	padding: 0;
+	text-align: center;
+	width: 36px;
+	transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+}
+.social li:hover {
+	transform: scale(1.15) rotate(360deg);
+	-webkit-transform: scale(1.1) rotate(360deg);
+	-moz-transform: scale(1.1) rotate(360deg);
+	-ms-transform: scale(1.1) rotate(360deg);
+	-o-transform: scale(1.1) rotate(360deg);
+}
+.social li a {
+	color: #EDEFF1;
+}
+.social li:hover {
+	border: 2px solid #2c3e50;
+	background: #2c3e50;
+}
+.social li a i {
+	font-size: 16px;
+	margin: 0 0 0 5px;
+	color: #EDEFF1 !important;
+}
