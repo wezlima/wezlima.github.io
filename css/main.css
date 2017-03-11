@@ -98,7 +98,10 @@ textarea {
 
 
 
-
+ul.social
+{
+	list-style-type: none;
+}
 
 
 
@@ -221,7 +224,8 @@ textarea {
         text-shadow: none !important;
     }
 
-    a,
+
+a,
     a:visited {
         text-decoration: underline;
     }
