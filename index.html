@@ -39,9 +39,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Topo</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
         </div>
@@ -51,14 +51,14 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <h1>Bem vindo</h1>
-                    <h3>Meu nome é Wesley Lima. Essa pagina tem como intuito aplicar o material que eu venho estudando e apresentar os projetos que estou envolvido</h3>
+                    <h3>Meu nome é Wesley Lima. Essa página tem como intuito aplicar o material que eu venho estudando e apresentar os projetos que estou envolvido</h3>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Projetos -->
-    <div class="container filterable-portfolio">
+    <div class="container filterable-portfolio" id="projetos">
         <h1>Projetos</h1>
         <div class="row">
             <div class="col-md-12">
@@ -74,28 +74,207 @@
         </div>
         <div class="row portfolio-items">
             <figure class="portfolio-item col-sm-4 algoritmo">
-                <h3 id="libft" class="circle text-center">Libft</h3>
+                <h3 id="libft" class="circle text-center" data-toggle="modal" data-target="#libModal">Libft</h3>
             </figure>
             <figure class="portfolio-item col-sm-4 algoritmo">
-                <h3 id="gnl" class="circle text-center">GNL</h3>
+                <h3 id="gnl" class="circle text-center" data-toggle="modal" data-target="#gnlModal">GNL</h3>
             </figure>
             <figure class="portfolio-item col-sm-4 shell">
-                <h3 id="ft_ls" class="circle text-center">ft_ls</h3>
+                <h3 id="ft_ls" class="circle text-center" data-toggle="modal" data-target="#lsModal">ft_ls</h3>
             </figure>
             <figure class="portfolio-item col-sm-4 algoritmo">
-                <h3 id="ft_printf" class="circle text-center">ft_printf</h3>
+                <h3 id="ft_printf" class="circle text-center" data-toggle="modal" data-target="#printfModal">ft_printf</h3>
             </figure>
             <figure class="portfolio-item col-sm-4 grafico">
-                <h3 id="ft_fdf" class="circle text-center">FDF</h3>
+                <h3 id="ft_fdf" class="circle text-center" data-toggle="modal" data-target="#fdfModal">FDF</h3>
             </figure>
             <figure class="portfolio-item col-sm-4 voluntario">
-                <h3 id="habitat" class="circle text-center">Habitat</h3>
+                <h3 id="habitat" class="circle text-center" data-toggle="modal" data-target="#habitatModal">Habitat</h3>
             </figure>
         </div>
+
+        <!-- Modal -->
+<div class="modal fade" id="libModal" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Projeto libft</h4>
+      </div>
+      <div class="modal-body">
+        <h4><p>O objetivo desse projeto é desenvolver uma biblioteca em C com funções úteis e populares na linguagem C.</p>
+        <p><a href="https://github.com/wezlima/Libft/blob/master/libft.pdf">PDF</a>
+        <a href="https://github.com/wezlima/Libft/tree/master/libft">Solução</a></p>
+        <p>As Funções desenvolvidas foram:</p>
+        </h4>
+        <ul>
+          <li>memset</li>
+          <li>bzero</li>
+          <li>memcpy</li>
+          <li>memccpy</li>
+          <li>memmove</li>
+          <li>memchr</li>
+          <li>memcmp</li>
+          <li>strlen</li>
+          <li>strdup</li>
+          <li>strcpy</li>
+          <li>strncpy</li>
+          <li>strcat</li>
+          <li>strncat</li>
+          <li>strlcat</li>
+          <li>strchr</li>
+          <li>strrchr</li>
+          <li>strstr</li>
+          <li>strnstr</li>
+          <li>strcmp</li>
+          <li>atoi</li>
+          <li>isalpha</li>
+          <li>isdigit</li>
+          <li>isalnum</li>
+          <li>isascii</li>
+          <li>isprint</li>
+          <li>toupper</li>
+          <li>tolower</li>
+        </ul>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="gnlModal" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Projeto Get_Next_line</h4>
+      </div>
+      <div class="modal-body">
+        <h4><p>O objetivo desse projeto é escrever uma funçāo que lê e returna um linha de um arquivo fd.</p>
+        <p><a href="https://github.com/wezlima/get_next_line/blob/master/get_next_line.en.pdf">PDF</a>
+        <a href="https://github.com/wezlima/get_next_line/blob/master/get_next_line.c">Solução</a></p>
+        <p>Esse Projeto é bem interessate pelo apredizado de variaveis estáticas. Entendimento de alocações e
+        buffer manuseio</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="lsModal" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Projeto ft_ls</h4>
+      </div>
+      <div class="modal-body">
+        <h4><p>O objetivo desse projeto é desenvolver uma aplicaçāo que imite o comando ls.</p>
+        <p><a href="https://cdn.intra.42.fr/pdf/pdf/885/ft_ls.en.pdf">PDF</a>
+        <p>O comando ls é um dos primeiros aprendidos por estudantes de computaçāo e também um dos mais usados.
+        Esse projeto permite um estudo sobre como esse comando funciona e como reproduzir esse evento</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="printfModal" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Projeto ft_printf</h4>
+      </div>
+      <div class="modal-body">
+        <h4><p>O objetivo desse projeto é desenvolver uma aplicaçāo que imite o comportamento da funçāo printf.
+          Uma das funções mais conhecidas e usadas</p>
+        <p><a href="https://cdn.intra.42.fr/pdf/pdf/883/ft_printf.en.pdf">PDF</a>
+        <p>A funçāo printf imprime uma mensagem e também consegue lidar com argumentos</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="fdfModal" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Projeto fdf</h4>
+      </div>
+      <div class="modal-body">
+        <h4><p>FDF é um projeto na área gráfica onde coordenadas sao passadas como argumentos e um mapa é gerado.</p>
+        <p><a href="https://cdn.intra.42.fr/pdf/pdf/881/fdf.en.pdf">PDF</a>
+        <img src="img/fdf.png" class="img-responsive">
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="fdfModal" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Projeto fdf</h4>
+      </div>
+      <div class="modal-body">
+        <h4><p>FDF é um projeto na área gráfica onde coordenadas sao passadas como argumentos e um mapa é gerado.</p>
+        <p><a href="https://cdn.intra.42.fr/pdf/pdf/881/fdf.en.pdf">PDF</a>
+        <img src="img/fdf.png" class="img-responsive">
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="habitatModal" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">habitat for humanity</h4>
+      </div>
+      <div class="modal-body">
+        <h4><p>Habitat</p></h4><p>É uma organização internacional, não-governamental e sem fins lucrativos, fundada em 1976.
+           Habitat tem se dedicado à construção de moradias "simples, decentes e acessíveis", um auto-descrito "ministério cristão da habitação", e abordou as questões de Habitação da pobreza em todo o mundo</p>
+        <p><a href="http://www.habitat.org/">SITE</a>
+        <img src="img/habitat.JPG" class="img-responsive">
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     </div>
 
     <!-- Contato -->
-    <footer>
+    <footer id="contato">
         <div class="container">
             <h1>Contato</h1>
             <div class="row">
